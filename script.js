@@ -9,9 +9,27 @@ personalMovieDB.actors = {};
 personalMovieDB.genres = [];
 personalMovieDB.privat = false;
 
-let lastFilm = prompt('Один из последних фильмов', '');
-let countOfFilm = +prompt('На сколько вы его оцените?', '');
-let lastFilm2 = prompt('Один из последних фильмов', '');
-let countOfFilm2 = +prompt('На сколько вы его оцените?', '');
-personalMovieDB.movies[lastFilm] = countOfFilm;
-personalMovieDB.movies[lastFilm2] = countOfFilm2;
+
+for(let i=0; i<2; i++){
+
+        let lastFilm = prompt('Один из последних фильмов', '');
+        let countOfFilm = prompt('На сколько вы его оцените?', '');
+
+        if(lastFilm !== null && countOfFilm !== null && lastFilm !==''&& countOfFilm !==''&& countOfFilm.length<50 ){
+            personalMovieDB.movies[lastFilm] = countOfFilm;
+          
+        } else {
+            console.log('error');
+            i--;
+        }
+        
+}
+
+if (personalMovieDB.count <10){
+    console.log('little');
+} else if(personalMovieDB.count>30 && personalMovieDB.count <30){
+    console.log('norm');
+} else{
+    console.log('too much')
+}
+
