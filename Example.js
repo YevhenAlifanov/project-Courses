@@ -1,19 +1,19 @@
-let num = 50;
+let str = "tESt";
+let arr = [1,2,3,4,5]
+console.log(str.toLowerCase());
 
-// while(num<=55){
-//     console.log(num)
-//     num++;
-// }
+let fruit = "some fruit";
+console.log(fruit.indexOf("q"));
 
-// do{
-//     console.log(num)
-//     num++;
-// }
-// while(num<55);
+const logg = "Hello world!"
+console.log(logg.slice(6));
 
-for(let i = 1; i<8; i++){
-    if(i==6){
-        continue;
-    }
-    console.log(i)
-}
+console.log(logg.substr(6, 12));
+
+let num = 12.2;
+console.log(Math.round(num));
+
+let test = "12.2px";
+console.log(parseFloat(test));
+
+
