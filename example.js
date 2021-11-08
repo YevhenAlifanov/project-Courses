@@ -177,7 +177,7 @@
 //      two:2
 //  };
 //  const newObj = {...q};
-
+//asfasfasf
 let soldier = {
     name: 'Igor',
     age: 25,
